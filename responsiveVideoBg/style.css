@@ -1,0 +1,43 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.fullScreen{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden; 
+    /* brak możliwości scrolla */
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.fullScreen video{
+    z-index: -1; /*obiekty nad video będą się pojawiać*/
+    position: absolute;
+    height: auto;
+    width: auto;
+    min-height: 100%;
+    min-width: 100%;
+}
+
+.header{
+    background-color: white;
+    color: #333;
+    padding: 1.25rem;
+    font-size: 4.375rem;
+    margin-top: 6.25rem;
+    border-radius: 0.1rem;
+}
+
+@media (max-width:510px){
+    .header{
+        padding: 0.75rem;
+        font-size: 2.375rem;
+        margin-top: 4.25rem;
+    }
+}
