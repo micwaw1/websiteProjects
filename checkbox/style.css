@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Raleway;
+    font-size: 2rem;
+    color: white;
+}
+
+body{
+    background-color: rgb(177, 6, 6);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+input[type='checkbox']{
+    cursor: pointer;
+
+    /* i oba najważniejsze tutaj, inaczej tab nie będzie można używać */
+    position: absolute;
+    opacity: 0; 
+}
+
+.container{
+    padding: 1rem;
+}
+
+.container label{
+    cursor: pointer;
+    display: flex;
+}
+
+.container label::before{
+    content: "";
+    height: 50px;
+    width: 50px;
+    border-radius: 3px;
+    border: 3px solid #fff;
+    margin: 15px 20px;
+}
+
+.container label:hover::before{
+    background-color: #2CC87D;
+    box-shadow: 2px 2px 41px 15px rgba(0,0,0,0.35);
+}
+
+.container input[type="checkbox"]:checked + label::before{
+    content: '\002714';
+    background-color: #009c51;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container input[type="checkbox"]:focus + label::before{
+    box-shadow: 2px 2px 41px 15px rgba(0,0,0,0.35);
+}
