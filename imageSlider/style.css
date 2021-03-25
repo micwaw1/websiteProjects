@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kiwi Maru', serif;
+}
+
+.topbar{
+    padding: 2rem;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.gallery{
+    height: 80vh;
+    width: 100vw;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.image-box{
+    flex-grow: 1;
+    flex-basis: 0;
+    transition: 400ms;
+    margin: 5px;
+}
+
+.image-box:hover{
+    flex-basis: 50%;
+}
+
+.image-box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: 400ms;
+}
+
+.active{
+    flex-basis: 50%;
+}
