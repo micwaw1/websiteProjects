@@ -1,0 +1,38 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #aaa;
+    font-family: 'Raleway', sans-serif;
+}
+
+h1{
+    font-weight: 900;
+    font-size: 8rem;
+    text-align: center;
+    background-image: url("../images/space.jpg");
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+h2{
+    font-weight: 900;
+    font-size: 8rem;
+    text-align: center;
+    background-image: url("https://media.giphy.com/media/hPlsN9Z6JNF4s/giphy.gif");
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+p{
+    font-size: 4rem;
+    padding: 20px;
+    text-align: center;
+    background-image: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(176,7,7,1) 49%, rgba(252,176,69,1) 100%);
+    /* background-clip: text; */
+    /* -webkit-background-clip: text; */
+    /* color: transparent; */
+}
