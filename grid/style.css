@@ -20,17 +20,40 @@ h1{
     background-color: aliceblue;
     outline: 8px solid purple;
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: 150px auto;
+    /* grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 50px auto 105px; */
+
+    grid-template-areas: 
+    "header header header" 60px
+    "main main sidebar" auto
+    "footer footer footer" 50px; 
+
 }
+
+.one{
+    grid-area: header;
+}
+
+.two{
+    grid-area: main;
+}
+
+.three{
+    grid-area: sidebar;
+}
+
+.four{
+    grid-area: footer;
+}
+
 
 .item{
     font-size: 2rem;
     background-color: #FFC000;
     border: 1px solid #222;
-    display: flex;
+    /* display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
 }
 
 /* .item:last-child{
